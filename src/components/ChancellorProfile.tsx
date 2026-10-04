@@ -72,7 +72,7 @@ export default function ChancellorProfile() {
 }
 
 function chancellorName(lang: Lang): string {
-  return { en: 'Engineer Folad Kabuli', fa: 'انجنیر فلاد کابلی', ps: 'انجنیر فلاد کابلي' }[lang];
+  return { en: 'Engineer Folad Kabuli', fa: 'انجینر فولاد کابلی', ps: 'انجنیر فولاد کابلي' }[lang];
 }
 function chancellorTitle(lang: Lang): string {
   return { en: 'Chancellor & Founder', fa: 'رئیس و بنیان‌گذار', ps: 'رئیس او بنسټ ایښودونکی' }[lang];
@@ -83,8 +83,8 @@ function welcomeHeading(lang: Lang): string {
 function welcomeMessage(lang: Lang): string {
   return {
     en: 'Dear students and faculty, welcome to Engineer Folad Kabuli Global Online University. We are committed to providing world-class, accessible education to every learner — wherever you are. Our mission is to bridge the gap between talent and opportunity through accredited, multilingual online learning. Together, we build the future of education for Afghanistan and the world.',
-    fa: 'دانشجویان و اساتید عزیز، به دانشگاه آنلاین جهانی انجنیر فلاد کابلی خوش آمدید. ما متعهد به ارائه آموزش عالی و دسترس‌پذیر برای هر یادگیرنده هستیم — در هر کجا که باشید. مأموریت ما پر کردن شکاف میان استعداد و فرصت از طریق آموزش آنلاین معتبر و چندزبانه است. با هم، آینده آموزش را برای افغانستان و جهان می‌سازیم.',
-    ps: 'ګرانو زده‌کوونکو او ښوونکو، د انجنیر فلاد کابلي نړیوال آنلاین پوهنتون ته ښه راغلاست. موږ هر زده‌کوونکي ته د لوړ کیفیت او د لاسرسي وړ زده‌کړې وړاندې کولو ژمن یو — چیرې چې وي. زموږ ماموریت د معتبرې څو ژبنيزې آنلاین زده‌کړې له لارې د استعداد او فرصت تر منځ تشې ډکول دي. په ګډه، موږ د افغانستان او نړۍ لپاره د زده‌کړې راتلونکی جوړوو.',
+    fa: 'دانشجویان و اساتید عزیز، به دانشگاه آنلاین جهانی انجینر فولاد کابلی خوش آمدید. ما متعهد به ارائه آموزش عالی و دسترس‌پذیر برای هر یادگیرنده هستیم — در هر کجا که باشید. مأموریت ما پر کردن شکاف میان استعداد و فرصت از طریق آموزش آنلاین معتبر و چندزبانه است. با هم، آینده آموزش را برای افغانستان و جهان می‌سازیم.',
+    ps: 'ګرانو زده‌کوونکو او ښوونکو، د انجنیر فولاد کابلي نړیوال آنلاین پوهنتون ته ښه راغلاست. موږ هر زده‌کوونکي ته د لوړ کیفیت او د لاسرسي وړ زده‌کړې وړاندې کولو ژمن یو — چیرې چې وي. زموږ ماموریت د معتبرې څو ژبنيزې آنلاین زده‌کړې له لارې د استعداد او فرصت تر منځ تشې ډکول دي. په ګډه، موږ د افغانستان او نړۍ لپاره د زده‌کړې راتلونکی جوړوو.',
   }[lang];
 }
 function whatsappLabel(lang: Lang): string {

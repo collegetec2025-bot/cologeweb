@@ -172,7 +172,7 @@ export default function IdCardView() {
 
 function title(lang: Lang): string { return { en: 'Student ID Card', fa: 'کارت شناسایی دانشجو', ps: 'د زده‌کوونکي د پیژندلو کارت' }[lang]; }
 function subtitle(lang: Lang): string { return { en: 'Your digital student identification', fa: 'کارت شناسایی دیجیتال دانشجویی شما', ps: 'ستاسو ډیجیټل د زده‌کوونکي پیژندنه' }[lang]; }
-function uniName(lang: Lang): string { return { en: 'Engineer Folad Kabuli Global Online University', fa: 'دانشگاه آنلاین جهانی انجنیر فلاد کابلی', ps: 'د انجنیر فلاد کابلي نړیوال آنلاین پوهنتون' }[lang]; }
+function uniName(lang: Lang): string { return { en: 'Engineer Folad Kabuli Global Online University', fa: 'دانشگاه آنلاین جهانی انجینر فولاد کابلی', ps: 'د انجنیر فولاد کابلي نړیوال آنلاین پوهنتون' }[lang]; }
 function enrolledLabel(lang: Lang): string { return { en: 'Enrolled', fa: 'ثبت‌نام', ps: 'نوم لیکل شوی' }[lang]; }
 function coursesLabel(lang: Lang): string { return { en: 'courses', fa: 'دروس', ps: 'دروس' }[lang]; }
 function downloadCard(lang: Lang): string { return { en: 'Download / Print ID Card', fa: 'دانلود / چاپ کارت شناسایی', ps: 'د پیژندلو کارت ډاونلوډ / چاپ' }[lang]; }
