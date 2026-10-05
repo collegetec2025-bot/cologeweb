@@ -1,14 +1,27 @@
-import { MessageCircle, Quote, GraduationCap } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { MessageCircle, Quote, GraduationCap, Facebook, Youtube, Mail } from 'lucide-react';
 import { useLang } from '@/context/LanguageContext';
 import { type Lang } from '@/lib/i18n';
+import { SOCIAL_LINKS, fetchSocialSettings, socialLabel } from '@/lib/social';
 
 const CAMPUS_IMAGE = 'https://images.pexels.com/photos/11932106/pexels-photo-11932106.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
-const CHANCELLOR_IMAGE = 'https://images.pexels.com/photos/13801445/pexels-photo-13801445.jpeg?auto=compress&cs=tinysrgb&h=400&w=400';
-const WHATSAPP_URL = 'https://wa.me/923325982972';
-const WHATSAPP_DISPLAY = '+92 332 5982972';
+const CHANCELLOR_IMAGE = '/folad.svg';
 
 export default function ChancellorProfile() {
   const { lang } = useLang();
+  const [whatsappUrl, setWhatsappUrl] = useState<string>('');
+  const [whatsappDisplay, setWhatsappDisplay] = useState<string>('');
+
+  useEffect(() => {
+    fetchSocialSettings().then((settings) => {
+      const raw = settings.social_whatsapp || '';
+      const num = raw.replace(/\D/g, '');
+      if (num) {
+        setWhatsappUrl(`https://wa.me/${num}`);
+        setWhatsappDisplay(raw);
+      }
+    });
+  }, []);
 
   return (
     <section className="relative overflow-hidden">
@@ -23,7 +36,7 @@ export default function ChancellorProfile() {
           {/* Chancellor photo */}
           <div className="lg:col-span-2 flex justify-center">
             <div className="relative">
-              <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden border-4 border-white/20 shadow-2xl">
+              <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden border-4 border-white/20 shadow-2xl bg-gradient-to-br from-blue-600 to-slate-800 flex items-center justify-center">
                 <img src={CHANCELLOR_IMAGE} alt={chancellorName(lang)} className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-white text-blue-700 text-sm font-bold shadow-lg whitespace-nowrap">
@@ -49,21 +62,40 @@ export default function ChancellorProfile() {
               {welcomeMessage(lang)}
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            {/* Social links */}
+            <div className="flex flex-wrap items-center gap-3 mb-5">
+              <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="w-11 h-11 rounded-xl bg-white/10 hover:bg-blue-600 flex items-center justify-center text-white transition-all" title={socialLabel(lang, 'facebook')}>
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href={SOCIAL_LINKS.youtube} target="_blank" rel="noopener noreferrer" className="w-11 h-11 rounded-xl bg-white/10 hover:bg-red-600 flex items-center justify-center text-white transition-all" title={socialLabel(lang, 'youtube')}>
+                <Youtube className="w-5 h-5" />
+              </a>
+              <a href={`mailto:${SOCIAL_LINKS.email}`} className="w-11 h-11 rounded-xl bg-white/10 hover:bg-slate-600 flex items-center justify-center text-white transition-all" title={socialLabel(lang, 'email')}>
+                <Mail className="w-5 h-5" />
+              </a>
+              {whatsappUrl && (
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-11 h-11 rounded-xl bg-white/10 hover:bg-emerald-600 flex items-center justify-center text-white transition-all" title={socialLabel(lang, 'whatsapp')}>
+                  <MessageCircle className="w-5 h-5" />
+                </a>
+              )}
+            </div>
+
+            {whatsappUrl ? (
               <a
-                href={WHATSAPP_URL}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
               >
                 <MessageCircle className="w-5 h-5" />
                 {whatsappLabel(lang)}
-                <span className="text-sm font-mono opacity-90" dir="ltr">{WHATSAPP_DISPLAY}</span>
+                <span className="text-sm font-mono opacity-90" dir="ltr">{whatsappDisplay}</span>
               </a>
+            ) : (
               <span className="text-sm text-blue-200/70">
                 {whatsappHint(lang)}
               </span>
-            </div>
+            )}
           </div>
         </div>
       </div>

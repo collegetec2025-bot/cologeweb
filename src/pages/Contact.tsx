@@ -1,14 +1,23 @@
-import { useState } from 'react';
-import { Mail, MapPin, Globe, Send, CheckCircle2 } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Mail, MapPin, Globe, Send, CheckCircle2, Facebook, Youtube, MessageCircle, ExternalLink } from 'lucide-react';
 import { useLang } from '@/context/LanguageContext';
 import { supabase } from '@/lib/supabase';
 import { t } from '@/lib/i18n';
+import { SOCIAL_LINKS, fetchSocialSettings, socialLabel } from '@/lib/social';
 
 export default function Contact() {
   const { lang } = useLang();
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
+  const [whatsappUrl, setWhatsappUrl] = useState<string>('');
+
+  useEffect(() => {
+    fetchSocialSettings().then((settings) => {
+      const num = settings.social_whatsapp?.replace(/\D/g, '');
+      if (num) setWhatsappUrl(`https://wa.me/${num}`);
+    });
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -30,12 +39,39 @@ export default function Contact() {
     }
   };
 
+  const socialLinks = [
+    { icon: Facebook, href: SOCIAL_LINKS.facebook, label: socialLabel(lang, 'facebook'), color: 'bg-blue-600 hover:bg-blue-700' },
+    { icon: Youtube, href: SOCIAL_LINKS.youtube, label: socialLabel(lang, 'youtube'), color: 'bg-red-600 hover:bg-red-700' },
+    ...(whatsappUrl ? [{ icon: MessageCircle, href: whatsappUrl, label: socialLabel(lang, 'whatsapp'), color: 'bg-emerald-600 hover:bg-emerald-700' }] : []),
+    { icon: Mail, href: `mailto:${SOCIAL_LINKS.email}`, label: socialLabel(lang, 'email'), color: 'bg-slate-700 hover:bg-slate-800' },
+  ];
+
   return (
     <div className="min-h-screen bg-slate-50 py-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-slate-900 mb-3">{t(lang, 'contact.title')}</h1>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">{t(lang, 'contact.subtitle')}</p>
+        </div>
+
+        {/* Social links bar */}
+        <div className="flex flex-wrap justify-center gap-3 mb-10">
+          {socialLinks.map((s) => {
+            const Icon = s.icon;
+            return (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white font-medium text-sm shadow-sm transition-all ${s.color}`}
+              >
+                <Icon className="w-4 h-4" />
+                {s.label}
+                <ExternalLink className="w-3 h-3 opacity-70" />
+              </a>
+            );
+          })}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -52,15 +88,17 @@ export default function Contact() {
               <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
                 <Mail className="w-5 h-5" />
               </div>
-              <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
-              <p className="text-sm text-slate-600">info@efkgou.edu</p>
+              <h3 className="font-semibold text-slate-900 mb-1">{t(lang, 'social.email')}</h3>
+              <a href={`mailto:${SOCIAL_LINKS.email}`} className="text-sm text-blue-600 hover:text-blue-700 transition-colors" dir="ltr">
+                {SOCIAL_LINKS.email}
+              </a>
             </div>
             <div className="bg-white rounded-2xl border border-slate-200 p-6">
               <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-3">
                 <Globe className="w-5 h-5" />
               </div>
               <h3 className="font-semibold text-slate-900 mb-1">Website</h3>
-              <p className="text-sm text-slate-600">www.efkgou.edu</p>
+              <p className="text-sm text-slate-600">EFKGOU Online — {t(lang, 'footer.address')}</p>
             </div>
           </div>
 
@@ -75,7 +113,7 @@ export default function Contact() {
                     onClick={() => setSuccess(false)}
                     className="mt-6 text-sm text-blue-600 hover:text-blue-700 font-medium"
                   >
-                    Send another message
+                    {t(lang, 'contact.submit')}
                   </button>
                 </div>
               ) : (

@@ -22,6 +22,7 @@ export default function Header() {
     { label: t(lang, 'nav.programs'), route: { name: 'programs' } },
     { label: t(lang, 'nav.courses'), route: { name: 'courses' } },
     { label: t(lang, 'nav.news'), route: { name: 'news' } },
+    { label: t(lang, 'nav.media'), route: { name: 'media' } },
     { label: t(lang, 'nav.about'), route: { name: 'about' } },
     { label: t(lang, 'nav.contact'), route: { name: 'contact' } },
   ];

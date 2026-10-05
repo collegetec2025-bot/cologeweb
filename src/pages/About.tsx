@@ -1,6 +1,7 @@
-import { Target, Eye, GraduationCap, Award, Globe, Users } from 'lucide-react';
+import { Target, Eye, GraduationCap, Award, Globe, Users, Facebook, Youtube, Mail } from 'lucide-react';
 import { useLang } from '@/context/LanguageContext';
 import { t } from '@/lib/i18n';
+import { SOCIAL_LINKS, socialLabel } from '@/lib/social';
 
 export default function About() {
   const { lang } = useLang();
@@ -8,6 +9,12 @@ export default function About() {
   const values = [
     { icon: Globe, title: t(lang, 'about.vision.title'), body: t(lang, 'about.vision.body') },
     { icon: Target, title: t(lang, 'about.mission.title'), body: t(lang, 'about.mission.body') },
+  ];
+
+  const socials = [
+    { icon: Facebook, href: SOCIAL_LINKS.facebook, label: socialLabel(lang, 'facebook') },
+    { icon: Youtube, href: SOCIAL_LINKS.youtube, label: socialLabel(lang, 'youtube') },
+    { icon: Mail, href: `mailto:${SOCIAL_LINKS.email}`, label: socialLabel(lang, 'email') },
   ];
 
   return (
@@ -26,14 +33,31 @@ export default function About() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
             <div className="md:col-span-1 flex justify-center">
-              <div className="w-48 h-48 rounded-full bg-gradient-to-br from-blue-500 to-slate-700 flex items-center justify-center text-6xl shadow-xl">
-                🎓
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-blue-200 shadow-xl bg-gradient-to-br from-blue-500 to-slate-700 flex items-center justify-center">
+                <img src="/folad.svg" alt={t(lang, 'about.founder.name')} className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="md:col-span-2">
               <span className="text-sm font-semibold text-blue-600 uppercase tracking-wide">{t(lang, 'about.founder.title')}</span>
               <h2 className="text-3xl font-bold text-slate-900 mt-2 mb-4">{t(lang, 'about.founder.name')}</h2>
               <p className="text-slate-600 leading-relaxed text-lg">{t(lang, 'about.founder.bio')}</p>
+              <div className="flex items-center gap-3 mt-6">
+                {socials.map((s) => {
+                  const Icon = s.icon;
+                  return (
+                    <a
+                      key={s.label}
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={s.label}
+                      className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-blue-600 text-slate-600 hover:text-white flex items-center justify-center transition-all"
+                    >
+                      <Icon className="w-5 h-5" />
+                    </a>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

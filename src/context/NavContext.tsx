@@ -12,6 +12,7 @@ export type Route =
   | { name: 'portal' }
   | { name: 'about' }
   | { name: 'news' }
+  | { name: 'media' }
   | { name: 'contact' }
   | { name: 'login' }
   | { name: 'signup' };

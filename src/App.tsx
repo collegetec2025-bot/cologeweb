@@ -15,6 +15,7 @@ import Dashboard from '@/pages/Dashboard';
 import Portal from '@/pages/Portal';
 import About from '@/pages/About';
 import News from '@/pages/News';
+import MediaLibrary from '@/pages/MediaLibrary';
 import Contact from '@/pages/Contact';
 import Auth from '@/pages/Auth';
 
@@ -40,6 +41,7 @@ function Pages() {
       case 'portal': return <Portal />;
       case 'about': return <About />;
       case 'news': return <News />;
+      case 'media': return <MediaLibrary />;
       case 'contact': return <Contact />;
       case 'login': return <Auth mode="login" />;
       case 'signup': return <Auth mode="signup" />;
