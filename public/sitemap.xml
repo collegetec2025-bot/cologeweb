@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://efkgou.edu/</loc>
+    <loc>https://efkgu.org/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://efkgou.edu/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://efkgou.edu/?lang=fa" />
-    <xhtml:link rel="alternate" hreflang="ps" href="https://efkgou.edu/?lang=ps" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://efkgu.org/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://efkgu.org/?lang=fa" />
+    <xhtml:link rel="alternate" hreflang="ps" href="https://efkgu.org/?lang=ps" />
   </url>
   <url>
-    <loc>https://efkgou.edu/programs</loc>
+    <loc>https://efkgu.org/programs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://efkgou.edu/courses</loc>
+    <loc>https://efkgu.org/courses</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://efkgou.edu/media</loc>
+    <loc>https://efkgu.org/media</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://efkgou.edu/about</loc>
+    <loc>https://efkgu.org/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://efkgou.edu/news</loc>
+    <loc>https://efkgu.org/news</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://efkgou.edu/contact</loc>
+    <loc>https://efkgu.org/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

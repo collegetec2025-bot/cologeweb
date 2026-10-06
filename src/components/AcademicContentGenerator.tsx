@@ -216,7 +216,7 @@ function langs(lang: Lang): string {
   return { en: 'Languages', fa: 'زبان‌ها', ps: 'ژبې' }[lang];
 }
 function univName(lang: Lang): string {
-  return { en: 'Engineer Folad Kabuli Global Online University', fa: 'دانشگاه آنلاین جهانی انجینر فولاد کابلی', ps: 'د انجنیر فولاد کابلي نړیوال آنلاین پوهنتون' }[lang];
+  return { en: 'Engineer Folad Kabuli Global Online University', fa: 'پوهنتون آنلاین جهانی انجنیر فولاد کابلی', ps: 'د انجنیر فولاد کابلي نړیوال آنلاین پوهنتون' }[lang];
 }
 function coverSubtitle(lang: Lang): string {
   return { en: 'Academic Research Paper', fa: 'مقاله پژوهشی آکادمیک', ps: 'علمي څیړنیزه مقاله' }[lang];
@@ -251,7 +251,7 @@ function copyrightTitle(lang: Lang): string {
 function copyrightText(lang: Lang): string {
   return {
     en: `© ${new Date().getFullYear()} Engineer Folad Kabuli Global Online University. All rights reserved. No part of this publication may be reproduced without written permission.`,
-    fa: `© ${new Date().getFullYear()} دانشگاه آنلاین جهانی انجینر فولاد کابلی. تمامی حقوق محفوظ است. هیچ بخشی از این نشریه بدون اجازه کتبی بازتولید نمی‌شود.`,
+    fa: `© ${new Date().getFullYear()} پوهنتون آنلاین جهانی انجنیر فولاد کابلی. تمامی حقوق محفوظ است. هیچ بخشی از این نشریه بدون اجازه کتبی بازتولید نمی‌شود.`,
     ps: `© ${new Date().getFullYear()} د انجنیر فولاد کابلي نړیوال آنلاین پوهنتون. ټول حقونه خوندي دي. د لیکلي اجازې پرته دا خپرونه بیا تولیدولی نشي.`,
   }[lang];
 }
