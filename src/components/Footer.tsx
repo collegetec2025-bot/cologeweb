@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { GraduationCap, Mail, MapPin, Globe, Facebook, Youtube, MessageCircle } from 'lucide-react';
+import { Mail, MapPin, Globe, Facebook, Youtube, MessageCircle } from 'lucide-react';
 import { useLang } from '@/context/LanguageContext';
 import { useNav, type Route } from '@/context/NavContext';
 import { t } from '@/lib/i18n';
@@ -39,12 +39,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                <GraduationCap className="w-6 h-6 text-white" />
-              </div>
+              <img src="/logo.svg" alt="EFKGOU Logo" className="w-10 h-10 rounded-xl shadow-md" />
               <div>
                 <div className="text-sm font-bold text-white">EFKGOU</div>
-                <div className="text-[10px] text-slate-400">{t(lang, 'footer.tagline')}</div>
+                <div className="text-[10px] text-slate-400 leading-tight max-w-[200px]">{t(lang, 'footer.tagline')}</div>
               </div>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed max-w-xs">

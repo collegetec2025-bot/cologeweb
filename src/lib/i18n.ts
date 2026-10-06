@@ -125,7 +125,7 @@ const en: Dict = {
   'auth.error': 'Invalid credentials or something went wrong.',
 
   'footer.rights': 'All rights reserved.',
-  'footer.tagline': 'Global Online University',
+  'footer.tagline': 'Engineer Folad Kabuli Global Online University',
   'footer.quicklinks': 'Quick Links',
   'footer.contact': 'Contact',
   'footer.address': 'Worldwide / Global Online',
@@ -423,7 +423,7 @@ const ps: Dict = {
   'auth.error': 'ناسم معلومات یا یوه ستونزه رامینځته شوه.',
 
   'footer.rights': 'ټول حقونه خوندي دي.',
-  'footer.tagline': 'نړیوال آنلاین پوهنتون',
+  'footer.tagline': 'د انجنیر فولاد کابلي نړیوال آنلاین پوهنتون',
   'footer.quicklinks': 'چټکې لینکونه',
   'footer.contact': 'اړیکه',
   'footer.address': 'په ټوله نړۍ کې',
