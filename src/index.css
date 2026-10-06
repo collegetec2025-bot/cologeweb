@@ -79,4 +79,31 @@
     from { opacity: 0; }
     to { opacity: 1; }
   }
+
+  .animate-luxury-shimmer {
+    animation: luxuryShimmer 4s ease-in-out infinite, luxuryFloat 6s ease-in-out infinite;
+  }
+
+  @keyframes luxuryShimmer {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(245, 158, 11, 0.25), 0 0 40px rgba(245, 158, 11, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 35px rgba(245, 158, 11, 0.5), 0 0 70px rgba(245, 158, 11, 0.2);
+    }
+  }
+
+  @keyframes luxuryFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+  }
+
+  .animate-luxury-glow {
+    animation: luxuryGlow 3s ease-in-out infinite;
+  }
+
+  @keyframes luxuryGlow {
+    0%, 100% { filter: drop-shadow(0 0 4px rgba(252, 211, 77, 0.6)); }
+    50% { filter: drop-shadow(0 0 10px rgba(252, 211, 77, 0.9)); }
+  }
 }

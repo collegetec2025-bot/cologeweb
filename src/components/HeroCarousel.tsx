@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLang } from '@/context/LanguageContext';
 import { useNav } from '@/context/NavContext';
 import { t, type Lang } from '@/lib/i18n';
@@ -68,9 +68,19 @@ export default function HeroCarousel() {
         <div className="relative z-20 h-full flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-200 text-xs font-medium mb-6 animate-fade-in">
-                <Sparkles className="w-3.5 h-3.5" />
-                {t(lang, 'footer.tagline')}
+              <div className="inline-flex items-center gap-3 px-4 py-2.5 rounded-2xl bg-blue-950/70 backdrop-blur-md border border-amber-500/60 shadow-[0_0_25px_rgba(245,158,11,0.35)] mb-6 animate-luxury-shimmer">
+                <img src="/logo.svg" alt="EFKGOU Logo" className="w-9 h-9 rounded-full ring-2 ring-amber-400/70 animate-luxury-glow flex-shrink-0" />
+                <div className="flex flex-col leading-tight">
+                  <span className="text-[11px] font-bold bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-100 bg-clip-text text-transparent tracking-wide" dir="ltr">
+                    Engineer Folad Kabuli Global Online University
+                  </span>
+                  <span className="text-[10px] bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-100 bg-clip-text text-transparent" dir="rtl">
+                    پوهنتون آنلاین جهانی انجنیر فولاد کابلی
+                  </span>
+                  <span className="text-[10px] bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-100 bg-clip-text text-transparent" dir="rtl">
+                    د انجنیر فولاد کابلي نړیوال آنلاین پوهنتون
+                  </span>
+                </div>
               </div>
               <div className="text-5xl mb-4">{slide.badge}</div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.15] mb-4 tracking-tight">
