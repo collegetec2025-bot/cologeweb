@@ -167,9 +167,9 @@ function SemesterCard({
 
 function subtitle(lang: Lang): string {
   return {
-    en: 'A complete 8-semester Bachelor of Science in Computer Science program with international accreditation standards.',
-    fa: 'برنامه کامل ۸ ترم کارشناسی علوم کامپیوتر با استانداردهای اعتبارسنجی بین‌المللی.',
-    ps: 'د نړیوال باور وړتیا معیارونو سره د کمپیوتر سائنس کې د بشپړ ۸ سمسترو لیسانس پروګرام.',
+    en: 'A complete 8-semester Bachelor of Science in Computer Science program aligned with international curriculum standards.',
+    fa: 'برنامه کامل ۸ ترم کارشناسی علوم کامپیوتر با استانداردهای نصاب بین‌المللی.',
+    ps: 'د نړیوال نصاب معیارونو سره د کمپیوتر سائنس کې د بشپړ ۸ سمسترو لیسانس پروګرام.',
   }[lang];
 }
 function statYears(lang: Lang): string { return { en: 'Years', fa: 'سال‌ها', ps: 'کلونه' }[lang]; }

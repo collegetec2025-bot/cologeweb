@@ -22,7 +22,7 @@ const en: Dict = {
   'nav.logout': 'Sign Out',
 
   'hero.title': 'Engineer Folad Kabuli Global Online University',
-  'hero.subtitle': 'World-class online education for Afghanistan and beyond — accessible, accredited, and built for the future.',
+  'hero.subtitle': 'Quality online education for Afghanistan and beyond — accessible, multilingual, and built for the future.',
   'hero.enroll': 'Enroll Now',
   'hero.explore': 'Explore Programs',
   'hero.stat.students': 'Active Students',
@@ -31,7 +31,7 @@ const en: Dict = {
   'hero.stat.countries': 'Countries Reached',
 
   'programs.title': 'Academic Programs',
-  'programs.subtitle': 'Choose from six faculties offering industry-relevant degrees and certificates.',
+  'programs.subtitle': 'Choose from seven faculties offering industry-relevant degrees and certificates.',
   'programs.explore': 'Explore Courses',
 
   'courses.title': 'Course Catalog',
@@ -95,11 +95,11 @@ const en: Dict = {
   'about.subtitle': 'A vision of accessible, world-class education for Afghanistan and the global community.',
   'about.founder.title': 'Founder Profile',
   'about.founder.name': 'Engineer Folad Kabuli',
-  'about.founder.bio': 'Engineer Folad Kabuli is a visionary educator and engineer dedicated to expanding access to quality higher education across Afghanistan and the Afghan diaspora. With decades of experience in engineering and academic leadership, he founded EFKGOU to bridge the gap between talent and opportunity — bringing accredited, multilingual online learning to students wherever they are.',
+  'about.founder.bio': 'Engineer Folad Kabuli is an educator and engineer committed to expanding access to quality higher education for learners across Afghanistan and the Afghan diaspora. Through his vision for accessible, multilingual online learning, he established EFKGOU to connect talent with educational opportunity.',
   'about.mission.title': 'Our Mission',
-  'about.mission.body': 'To deliver affordable, accredited, and culturally relevant online education that empowers students to build careers, serve their communities, and contribute to a knowledge-based economy.',
+  'about.mission.body': 'To deliver affordable, culturally relevant online education that empowers students to build careers, serve their communities, and contribute to a knowledge-based economy.',
   'about.vision.title': 'Our Vision',
-  'about.vision.body': 'To be the leading online university for the Afghan community worldwide — recognized for academic excellence, technological innovation, and inclusive multilingual instruction.',
+  'about.vision.body': 'To be a leading online university for the Afghan community worldwide — known for academic excellence, technological innovation, and inclusive multilingual instruction.',
 
   'contact.title': 'Contact Us',
   'contact.subtitle': 'Have a question about admissions, programs, or enrollment? Send us a message.',
@@ -171,7 +171,7 @@ const fa: Dict = {
   'nav.logout': 'خروج',
 
   'hero.title': 'پوهنتون آنلاین جهانی انجنیر فولاد کابلی',
-  'hero.subtitle': 'آموزش عالی آنلاین برای افغانستان و جهان — معتبر، دسترس‌پذیر و ساخته‌شده برای آینده.',
+  'hero.subtitle': 'آموزش باکیفیت آنلاین برای افغانستان و جهان — دسترس‌پذیر، چندزبانه و ساخته‌شده برای آینده.',
   'hero.enroll': 'همین حالا ثبت‌نام کنید',
   'hero.explore': 'کاوش برنامه‌ها',
   'hero.stat.students': 'دانشجویان فعال',
@@ -180,7 +180,7 @@ const fa: Dict = {
   'hero.stat.countries': 'کشورهای دسترس‌یافته',
 
   'programs.title': 'برنامه‌های آکادمیک',
-  'programs.subtitle': 'از شش دانشکده با مدارک و گواهینامه‌های مرتبط با صنعت انتخاب کنید.',
+  'programs.subtitle': 'از هفت دانشکده با مدارک و گواهینامه‌های مرتبط با صنعت انتخاب کنید.',
   'programs.explore': 'کاوش دروس',
 
   'courses.title': 'کتابخانه دروس',
@@ -244,11 +244,11 @@ const fa: Dict = {
   'about.subtitle': 'چشم‌انداز آموزش عالیِ دسترس‌پذیر برای افغانستان و جامعه جهانی.',
   'about.founder.title': 'پروفایل بنیان‌گذار',
   'about.founder.name': 'انجنیر فولاد کابلی',
-  'about.founder.bio': 'انجنیر فولاد کابلی معلم و انجنیر دوراندیشی است که خود را به گسترش دسترسی به آموزش عالی با کیفیت در سراسر افغانستان و دیاسپورای افغان اختصاص داده است. با دهه‌ها تجربه در انجنیری و رهبری آکادمیک، او EFKGOU را بنیان نهاد تا شکاف میان استعداد و فرصت را پر کند — آموزش آنلاین معتبر و چندزبانه را به دانشجویان در هر کجا که هستند برساند.',
+  'about.founder.bio': 'انجنیر فولاد کابلی آموزگار و انجنیری است که متعهد به گسترش دسترسی به آموزش عالی باکیفیت برای دانشجویان در سراسر افغانستان و جامعه افغان‌های مقیم خارج از کشور است. او با چشم‌انداز فراهم‌سازی آموزش آنلاینِ قابل‌دسترس و چندزبانه، EFKGOU را بنیان گذاشت تا زمینه پیوند میان استعداد و فرصت‌های آموزشی را فراهم سازد.',
   'about.mission.title': 'مأموریت ما',
-  'about.mission.body': 'ارائه آموزش آنلاین ارزان، معتبر و مرتبط از نظر فرهنگی که دانشجویان را برای ساختن مسیر شغلی، خدمت به جامعه و مشارکت در اقتصاد مبتنی بر دانش توانمند می‌سازد.',
+  'about.mission.body': 'ارائه آموزش آنلاین ارزان و مرتبط از نظر فرهنگی که دانشجویان را برای ساختن مسیر شغلی، خدمت به جامعه و مشارکت در اقتصاد مبتنی بر دانش توانمند می‌سازد.',
   'about.vision.title': 'چشم‌انداز ما',
-  'about.vision.body': 'تبدیل شدن به پیشتازترین پوهنتون آنلاین برای جامعه افغان در سراسر جهان — شناخته‌شده به دلیل تعالی آکادمیک، نوآوری فناورانه و آموزش چندزبانه فراگیر.',
+  'about.vision.body': 'تبدیل شدن به یکی از پیشتازترین پوهنتون‌های آنلاین برای جامعه افغان در سراسر جهان — شناخته‌شده به دلیل تعالی آکادمیک، نوآوری فناورانه و آموزش چندزبانه فراگیر.',
 
   'contact.title': 'تماس با ما',
   'contact.subtitle': 'درباره پذیرش، برنامه‌ها یا ثبت‌نام سوالی دارید؟ پیام بفرستید.',
@@ -320,7 +320,7 @@ const ps: Dict = {
   'nav.logout': 'وتل',
 
   'hero.title': 'د انجنیر فولاد کابلي نړیوال آنلاین پوهنتون',
-  'hero.subtitle': 'د افغانستان او نړۍ لپاره لوړ کیفیت آنلاین زده‌کړه — معتبر، د لاسرسي وړ او د راتلونکې لپاره جوړ شوی.',
+  'hero.subtitle': 'د افغانستان او نړۍ لپاره باکیفیته آنلاین زده‌کړه — د لاسرسي وړ، څوژبې او د راتلونکې لپاره جوړ شوی.',
   'hero.enroll': 'همدا اوس نوم ولیکئ',
   'hero.explore': 'پروګرامونه وپلټئ',
   'hero.stat.students': 'فعاله زده‌کوونکي',
@@ -329,7 +329,7 @@ const ps: Dict = {
   'hero.stat.countries': 'هغه هېوادونه چې ورسره اړیکه نیول شوې',
 
   'programs.title': 'اکاډمیک پروګرامونه',
-  'programs.subtitle': 'د صنعت سره تړاو لرونکو سندونو او تصدیق‌لیکونو سره د شپږ پوهنځیو څخه وټاکئ.',
+  'programs.subtitle': 'د صنعت سره تړاو لرونکو سندونو او تصدیق‌لیکونو سره د اوو پوهنځیو څخه وټاکئ.',
   'programs.explore': 'دروس وپلټئ',
 
   'courses.title': 'د دروس کتلاگ',
@@ -393,9 +393,9 @@ const ps: Dict = {
   'about.subtitle': 'د افغانستان او نړیوالې ټولنې لپاره د لاسرسي وړ لوړ کیفیت زده‌کړې لیدلوری.',
   'about.founder.title': 'د بنسټ ایښودونکي پروفایل',
   'about.founder.name': 'انجنیر فولاد کابلي',
-  'about.founder.bio': 'انجنیر فولاد کابلي یو لیدلوري لرونکي ښوونکی او انجنیر دی چې په ټول افغانستان او افغان ډیاسپورا کې د لوړ کیفیت لوړو زده‌کړو د لاسرسي پراخولو ته ژمن دی. د انجنیرۍ او اکاډمیک مشرتوب په لسیزو تجربې سره، هغه EFKGOU د استعداد او فرصت تر منځ د تشې د ډکولو لپاره بنسټ کېښود — معتبره څو ژبنيز آنلاین زده‌کړه زده‌کوونکو ته چیرې چې وي ورسوي.',
+  'about.founder.bio': 'انجنیر فولاد کابلي یو ښوونکی او انجنیر دی چې په ټول افغانستان او بهر مېشتو افغانانو کې د باکیفیته لوړو زده‌کړو د لاسرسي پراختیا ته ژمن دی. هغه د لاسرسي وړ او څوژبي آنلاین زده‌کړو د خپل لیدلوري له مخې EFKGOU بنسټ کېښود، څو استعدادونه له تعلیمي فرصتونو سره ونښلوي.',
   'about.mission.title': 'زموږ ماموریت',
-  'about.mission.body': 'د ارزانه، معتبرې او کلتوري اړوند آنلاین زده‌کړې وړاندې کول چې زده‌کوونکي د مسلک جوړولو، خپلې ټولنې ته خدمت کولو او د پوهې پر بنسټ اقتصاد ته د ونډې لپاره وړتیا ورکړي.',
+  'about.mission.body': 'د ارزانه او کلتوري اړوند آنلاین زده‌کړې وړاندې کول چې زده‌کوونکي د مسلک جوړولو، خپلې ټولنې ته خدمت کولو او د پوهې پر بنسټ اقتصاد ته د ونډې لپاره وړتیا ورکړي.',
   'about.vision.title': 'زموږ لیدلوری',
   'about.vision.body': 'په ټوله نړۍ کې د افغان ټولنې لپاره د مخکښ آنلاین پوهنتون کېدل — د اکاډمیک عاليت، د ټیکنالوژۍ نوښت او شامل څو ژبنيز تدریس لپاره پیژندل شوی.',
 

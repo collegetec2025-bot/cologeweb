@@ -107,16 +107,16 @@ function chancellorName(lang: Lang): string {
   return { en: 'Engineer Folad Kabuli', fa: 'انجنیر فولاد کابلی', ps: 'انجنیر فولاد کابلي' }[lang];
 }
 function chancellorTitle(lang: Lang): string {
-  return { en: 'Chancellor & Founder', fa: 'رئیس و بنیان‌گذار', ps: 'رئیس او بنسټ ایښودونکی' }[lang];
+  return { en: 'Founder & Rector', fa: 'بنیان‌گذار و رئیس', ps: 'بنسټګر او رئیس' }[lang];
 }
 function welcomeHeading(lang: Lang): string {
-  return { en: 'A Message from the Chancellor', fa: 'پیام از رئیس پوهنتون', ps: 'د پوهنتون له ریاست څخه پیغام' }[lang];
+  return { en: 'Message from the Founder and Rector', fa: 'پیام بنیان‌گذار و رئیس پوهنتون', ps: 'د بنسټګر او رئیس پیغام' }[lang];
 }
 function welcomeMessage(lang: Lang): string {
   return {
-    en: 'Dear students and faculty, welcome to Engineer Folad Kabuli Global Online University. We are committed to providing world-class, accessible education to every learner — wherever you are. Our mission is to bridge the gap between talent and opportunity through accredited, multilingual online learning. Together, we build the future of education for Afghanistan and the world.',
-    fa: 'دانشجویان و اساتید عزیز، به پوهنتون آنلاین جهانی انجنیر فولاد کابلی خوش آمدید. ما متعهد به ارائه آموزش عالی و دسترس‌پذیر برای هر یادگیرنده هستیم — در هر کجا که باشید. مأموریت ما پر کردن شکاف میان استعداد و فرصت از طریق آموزش آنلاین معتبر و چندزبانه است. با هم، آینده آموزش را برای افغانستان و جهان می‌سازیم.',
-    ps: 'ګرانو زده‌کوونکو او ښوونکو، د انجنیر فولاد کابلي نړیوال آنلاین پوهنتون ته ښه راغلاست. موږ هر زده‌کوونکي ته د لوړ کیفیت او د لاسرسي وړ زده‌کړې وړاندې کولو ژمن یو — چیرې چې وي. زموږ ماموریت د معتبرې څو ژبنيزې آنلاین زده‌کړې له لارې د استعداد او فرصت تر منځ تشې ډکول دي. په ګډه، موږ د افغانستان او نړۍ لپاره د زده‌کړې راتلونکی جوړوو.',
+    en: 'Engineer Folad Kabuli is an educator and engineer committed to expanding access to quality higher education for learners across Afghanistan and the Afghan diaspora. Through his vision for accessible, multilingual online learning, he established EFKGOU — Engineer Folad Kabuli Global Online University — with the aim of connecting talent with educational opportunity. EFKGOU aspires to create an inclusive learning environment where students can develop their knowledge, practical skills, critical thinking, and professional potential, regardless of where they live. We welcome learners who share our commitment to knowledge, personal development, and a better future through education.',
+    fa: 'انجنیر فولاد کابلی، آموزگار و انجنیر، متعهد به گسترش دسترسی به آموزش عالی باکیفیت برای دانشجویان در سراسر افغانستان و جامعه افغان‌های مقیم خارج از کشور است. او با چشم‌انداز فراهم‌سازی آموزش آنلاینِ قابل‌دسترس و چندزبانه، پوهنتون آنلاین جهانی انجنیر فولاد کابلی (EFKGOU) را بنیان گذاشت تا زمینه پیوند میان استعداد و فرصت‌های آموزشی را فراهم سازد. EFKGOU در پی ایجاد محیطی فراگیر برای یادگیری است؛ محیطی که در آن دانشجویان بتوانند، بدون توجه به محل زندگی خود، دانش، مهارت‌های عملی، تفکر انتقادی و توانایی‌های مسلکی خویش را توسعه دهند. از همه علاقه‌مندان دانش، رشد فردی و ساختن آینده‌ای بهتر از راه آموزش استقبال می‌کنیم.',
+    ps: 'انجنیر فولاد کابلي یو ښوونکی او انجنیر دی چې په ټول افغانستان او بهر مېشتو افغانانو کې د باکیفیته لوړو زده‌کړو د لاسرسي پراختیا ته ژمن دی. هغه د لاسرسي وړ او څوژبي آنلاین زده‌کړو د خپل لیدلوري له مخې د انجنیر فولاد کابلي نړیوال آنلاین پوهنتون (EFKGOU) بنسټ کېښود، څو استعدادونه له تعلیمي فرصتونو سره ونښلوي. EFKGOU هڅه کوي داسې ټول‌شموله زده‌کړیز چاپېریال رامنځته کړي چې زده‌کوونکي وکولای شي، د خپل استوګنځي له موقعیت پرته، خپله پوهه، عملي مهارتونه، انتقادي فکر او مسلکي وړتیاوې پیاوړې کړي. موږ هغو ټولو زده‌کوونکو ته ښه راغلاست وایو چې د پوهې، شخصي پرمختګ او د زده‌کړې له لارې د ښه راتلونکي جوړولو ژمنتیا لري.',
   }[lang];
 }
 function whatsappLabel(lang: Lang): string {

@@ -6,7 +6,7 @@ import { supabase, type Faculty } from '@/lib/supabase';
 import { localized, localizedDesc, t } from '@/lib/i18n';
 
 const FACULTY_ICONS: Record<string, string> = {
-  Cpu: '💻', Network: '🌐', Code: '⚡', Languages: '🗣️', Shield: '🛡️', BarChart3: '📊',
+  Cpu: '💻', Network: '🌐', Code: '⚡', Languages: '🗣️', Shield: '🛡️', BarChart3: '📊', BookOpen: '📖',
 };
 
 const COLOR_MAP: Record<string, { gradient: string; text: string }> = {

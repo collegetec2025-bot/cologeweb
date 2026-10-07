@@ -220,7 +220,7 @@ function generateRows(item: MenuItemKey): Row[] {
     'university-profile': ['EFKGOU Profile', 'Mission & Vision', 'Leadership Team', 'Accreditation Info', 'Contact Details'],
     'trustees': ['Dr. A. Rahimi', 'Eng. F. Kabuli', 'Prof. M. Noori', 'Dr. Z. Hashimi', 'Eng. O. Faruqi'],
     'calendar': ['Fall 2026 Start', 'Midterm Exams', 'Winter Break', 'Spring 2027 Start', 'Final Exams'],
-    'accreditation': ['Ministry of Higher Ed', 'ISO 9001:2025', 'ACM Curriculum Review', 'International Board', 'Quality Assurance'],
+    'accreditation': ['Curriculum Standards', 'Quality Assurance Framework', 'Academic Integrity Policy', 'Continuous Improvement', 'Student Feedback Process'],
     'bscs-program': ['Semester 1 — Intro to CS', 'Semester 2 — OOP & Logic', 'Semester 3 — Data Structures', 'Semester 4 — OS & Databases', 'Semester 5 — Networks & AI'],
     'syllabi': ['CS101 Syllabus', 'CS201 Syllabus', 'CS301 Syllabus', 'CS401 Syllabus', 'MATH101 Syllabus'],
     'departments': ['Software Engineering', 'Network Administration', 'Frontend Development', 'Linguistics', 'InfoSec'],

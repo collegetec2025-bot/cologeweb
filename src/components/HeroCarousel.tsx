@@ -168,7 +168,7 @@ const enSlides: Record<string, string> = {
   'slide.campus.title': 'Campus & Community',
   'slide.campus.desc': 'Join a vibrant community of learners from across Afghanistan and the world.',
   'slide.graduation.title': 'Graduation & Careers',
-  'slide.graduation.desc': 'Earn accredited certificates and degrees recognized by employers worldwide.',
+  'slide.graduation.desc': 'Earn certificates and build skills recognized by employers worldwide.',
   'slide.research.title': 'Research & Innovation',
   'slide.research.desc': 'Engage in cutting-edge research with faculty and international partners.',
 };
@@ -195,7 +195,7 @@ const faSlides: Record<string, string> = {
   'slide.campus.title': 'محوطه و جامعه',
   'slide.campus.desc': 'به جامعه پویای یادگیرندگان از سراسر افغانستان و جهان بپیوندید.',
   'slide.graduation.title': 'فراغت و مسیر شغلی',
-  'slide.graduation.desc': 'گواهینامه‌ها و مدارک معتبر شناخته‌شده توسط کارفرمایان جهان کسب کنید.',
+  'slide.graduation.desc': 'گواهینامه‌ها و مهارت‌هایی شناخته‌شده توسط کارفرمایان جهان کسب کنید.',
   'slide.research.title': 'پژوهش و نوآوری',
   'slide.research.desc': 'در پژوهش‌های پیشرفته با اساتید و شرکای بین‌المللی مشارکت کنید.',
 };
@@ -222,7 +222,7 @@ const psSlides: Record<string, string> = {
   'slide.campus.title': 'پوهنتون او ټولنه',
   'slide.campus.desc': 'د افغانستان او نړۍ څخه د زده‌کوونکو ژوندۍ ټولنې سره یوځای شئ.',
   'slide.graduation.title': 'د فراغت او مسلک',
-  'slide.graduation.desc': 'د نړۍ کارموندونکو لخوا پیژندل شوي معتبر تصدیق‌لیکونه او سندونه ترلاسه کړئ.',
+  'slide.graduation.desc': 'د نړۍ کارموندونکو لخوا پیژندل شوي تصدیق‌لیکونه او مهارتونه ترلاسه کړئ.',
   'slide.research.title': 'څیړنه او نوښت',
   'slide.research.desc': 'د ښوونکو او نړیوالو شریکانو سره په پرمختللو څیړنو کې برخه واخلئ.',
 };

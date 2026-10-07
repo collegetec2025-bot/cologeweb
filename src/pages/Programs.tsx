@@ -6,7 +6,7 @@ import { supabase, type Faculty, type Course } from '@/lib/supabase';
 import { localized, localizedDesc, localizedCourse, t } from '@/lib/i18n';
 
 const FACULTY_ICONS: Record<string, string> = {
-  Cpu: '💻', Network: '🌐', Code: '⚡', Languages: '🗣️', Shield: '🛡️', BarChart3: '📊',
+  Cpu: '💻', Network: '🌐', Code: '⚡', Languages: '🗣️', Shield: '🛡️', BarChart3: '📊', BookOpen: '📖',
 };
 
 const COLOR_MAP: Record<string, { gradient: string; text: string; bg: string }> = {
@@ -97,7 +97,7 @@ function bscsCtaTitle(lang: string): string {
   return { en: 'BSCS 4-Year International Program', fa: 'برنامه ۴ ساله بین‌المللی BSCS', ps: 'د ۴ کلن نړیوال BSCS پروګرام' }[lang as 'en' | 'fa' | 'ps'] ?? 'BSCS 4-Year International Program';
 }
 function bscsCtaDesc(lang: string): string {
-  return { en: 'Explore the complete 8-semester Bachelor of Science in Computer Science curriculum with international accreditation.', fa: 'نصاب کامل ۸ ترم کارشناسی علوم کامپیوتر با اعتبارسنجی بین‌المللی را کشف کنید.', ps: 'د نړیوال باور وړتیا سره د بشپړ ۸ سمسترو کمپیوتر سائنس لیسانس نصاب وپلټئ.' }[lang as 'en' | 'fa' | 'ps'] ?? 'Explore the complete 8-semester BSCS curriculum.';
+  return { en: 'Explore the complete 8-semester Bachelor of Science in Computer Science curriculum aligned with international standards.', fa: 'نصاب کامل ۸ ترم کارشناسی علوم کامپیوتر هم‌سو با استانداردهای بین‌المللی را کشف کنید.', ps: 'د نړیوالو معیارونو سره سمون خوړلی د بشپړ ۸ سمسترو کمپیوتر سائنس لیسانس نصاب وپلټئ.' }[lang as 'en' | 'fa' | 'ps'] ?? 'Explore the complete 8-semester BSCS curriculum.';
 }
 function bscsCtaButton(lang: string): string {
   return { en: 'View Curriculum', fa: 'مشاهده نصاب', ps: 'نصاب وګورئ' }[lang as 'en' | 'fa' | 'ps'] ?? 'View Curriculum';
